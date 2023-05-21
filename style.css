@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+h1 {
+  font-size: 24px;
+}
+#bookmarkInput {
+  width: 300px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+#bookmarkList {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+.bookmarkItem {
+  margin-bottom: 5px;
+}
