@@ -4,6 +4,10 @@ document.addEventListener("DOMContentLoaded", function () {
   var bookmarkButton = document.getElementById("bookmarkButton");
   var bookmarkList = document.getElementById("bookmarkList");
 
+  //   chrome.storage.sync.remove("bookmarks", function () {
+  //     console.log("Bookmarks data cleared");
+  //   });
+
   // Load the bookmarks from storage
   chrome.storage.sync.get("bookmarks", function (data) {
     var bookmarks = data.bookmarks || [];
@@ -48,11 +52,11 @@ document.addEventListener("DOMContentLoaded", function () {
   // Keyboard shortcut to open a bookmarked link
   document.addEventListener("keydown", function (event) {
     if (event.ctrlKey) {
-      var shortcut = String.fromCharCode(event.keyCode).toLowerCase();
+      var pressedKey = event.key.toLowerCase();
       chrome.storage.sync.get("bookmarks", function (data) {
         var bookmarks = data.bookmarks || [];
         var matchedBookmark = bookmarks.find(function (bookmark) {
-          return bookmark.shortcut.toLowerCase() === shortcut;
+          return bookmark.shortcut.toLowerCase() === pressedKey;
         });
 
         if (matchedBookmark) {
