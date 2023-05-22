@@ -1,11 +1,16 @@
 {
-  "manifest_version": 2,
-  "name": "Link Bookmark",
+  "manifest_version": 3,
+  "name": "Linky",
   "version": "1.0",
   "description": "A browser extension to bookmark and store links.",
-  "browser_action": {
-    "default_title": "Link Bookmark",
-    "default_popup": "popup.html"
+  "action": {
+    "default_popup": "index.html"
   },
-  "permissions": ["storage"]
+  "permissions": ["storage"],
+  "icons": {
+    "128": "icon128.png"
+  },
+  "background": {
+    "service_worker": "popup.js"
+  }
 }
