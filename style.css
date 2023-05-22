@@ -21,7 +21,6 @@ h1 {
 button {
   padding: 2% 4%;
   margin: 1%;
-  /* background-color: #03d8cd; */
   background-color: #4caf50;
   border-radius: 5px;
   color: #fff;
@@ -47,21 +46,3 @@ button:hover {
 .bookmarkItem:hover {
   background-color: #dfdfdf;
 }
-/* ul#bookmarkList {
-  list-style: none;
-  padding: 0;
-  margin: 2%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-}
-
-ul#bookmarkList li {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  margin: 2%;
-  padding: 0.5%;
-  border-radius: 5px;
-  background-color: aliceblue;
-} */
